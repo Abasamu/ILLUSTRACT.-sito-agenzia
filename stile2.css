@@ -1,0 +1,223 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color: white;
+    margin: 0;
+}
+header{
+    background-color: #0055A5;
+    display: flex;
+    justify-content: space-between;
+}
+header h1{
+    color:white;
+    background-color: #0055A5;
+    margin: 0%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    font-size: 80px;
+}
+header nav a{
+    list-style: none;
+    font-size: 25px;
+    color: white;
+    margin-top: 60px;
+    margin-right: 95px;
+    display: inline-flex;
+    justify-content: space-between;
+    gap: 20px;
+    text-decoration: none;
+
+}
+header a:hover{
+    color: blue;
+}
+main{
+    max-width: 1075px;
+    margin: auto;
+}
+section.hero{
+    margin-top: 150px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+section.hero h1{
+    margin-top: 150px;
+    display: inline;
+    font-size: 50px;
+    margin-left: -110px;
+}
+section.hero p{
+    margin-top: 50px;
+    font-size: 20px;
+    margin-left: -110px;
+}
+section.hero p1{
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    margin-left: -110px;
+}
+section.hero a{
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    margin-left: -110px;
+    font-weight: 700;
+    text-decoration: none;
+    color: black;
+}
+section.hero a:hover{
+    color: #0055A5;
+}
+section.hero img{
+    width: 377px;
+    height: 470px;
+}
+section.card{
+    width: 377px;
+    height: 470px;
+    gap: 300px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 100px;
+}
+section.card img{
+    width: 100%;
+    height: 100%;
+    width: 377px;
+    height: 470px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+footer {
+    background-color: #0055A5;
+    text-align: center;
+    color:white;
+    max-width: 100%;
+    margin-top: 620px;
+    padding: 20px;
+}
+@media (max-width: 800px) {
+    main{
+        max-width: none;
+    }
+    section.card {
+        display: flex;
+        flex-direction: column;
+        padding-left: 125px;
+        
+    }
+    section.hero{
+        flex-direction: column;
+        display: flex;
+        text-align: center;
+    }
+    section.hero img{
+        flex-direction: column;
+        display: flex;
+        text-align: center;
+        padding-left: 125px;
+    }
+    section.hero h1{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding-left: 125px;
+        
+    }
+    section.hero p {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+        padding-left: 125px;
+    }
+    section.hero p1 {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding-left: 125px;
+        
+    }
+    section.hero a {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+        padding-left: 125px;
+        
+    }
+
+    header {
+        flex-direction: column;
+        gap: 10px;
+    }
+    footer {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 2000px;
+    }
+}
+@media (max-width: 400px) {
+    main{
+        max-width: none;
+
+    }
+    section.card{
+        max-width: 400px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-right: 900px;
+        
+        
+    }
+    section.card img {
+        max-width: 100%;
+        max-height: 100%;
+        padding-right: 900px;
+        display: flex;
+        flex-direction: column;
+        
+    }
+    section.card h3 {
+        margin-right: 300px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        
+    }
+
+    header {
+        max-width: 400px;
+        flex-direction: column;
+        gap: 10px;
+    }
+    header h1{
+        font-size: 48px;
+        flex-direction: column;
+        gap: 10px;
+    }
+    section.hero h3{
+        font-size: 28px;
+        flex-direction: column;
+        gap: 10px;
+    }
+    section.hero h2{
+        font-size: 28px;
+        flex-direction: column;
+        gap: 10px;
+    }
+    section.hero h4{
+        font-size: 28px;
+        flex-direction: column;
+        gap: 10px;
+    }
+    footer {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 2000px;
+    }
+}
